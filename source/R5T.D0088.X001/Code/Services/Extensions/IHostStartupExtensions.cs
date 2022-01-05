@@ -16,8 +16,8 @@ namespace R5T.D0088
             IServiceAction<THostStartup> hostStartupAction)
             where THostStartup : IHostStartup
             where THostBuilder :
-            IHasConfigureConfiguration<THostBuilder>,
-            T0072.IHasConfigureServices<THostBuilder>
+                IHasConfigureConfiguration<THostBuilder>,
+                T0072.IHasConfigureServices<THostBuilder>
         {
             var startupServiceProvider = Instances.ServiceOperator.GetServiceInstance(
                 hostStartupAction,
